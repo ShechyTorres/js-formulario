@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <div class="izquierda">
+            <h2>Formulario</h2>
+            <form name="formulario" class="for">
+                <label for="">Parcial %25</label>
+                <input type="text" name="parcial1">
+                <br>
+                <label for="">Parcial %20</label>
+                <input type="text" name="parcial2">
+                <br>
+                <label for="">Parcial %25</label>
+                <input type="text" name="parcial3">
+                <br>
+                <label for="">Parcial %30</label>
+                <input type="text" name="parcial4">
+                <br><br>
+                <input type="button" value="Calcular" onclick="calcular()">
+                <input type="button" value="Limpiar" onclick="limpiar()">
+            </form>
+        </div>
+        <br>
+        <div class="derecha">
+            <strong>Suma</strong>
+            <span id="resultadoSuma"></span>
+            <br>
+            <strong>Promedio</strong>
+            <span id="resultadoPromedio"></span>
+        </div>
+    </main>
+    
+
+    <script src="codigo.js"></script>
+</body>
+</html>
