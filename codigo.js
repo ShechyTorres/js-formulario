@@ -1,7 +1,15 @@
-document.getElementById("resultadoOperacion").style.visibility = "hidden";
+var ocultar = $("#ocultar");
+var elemento = $("#resultadoOperacion");
+ocultar.ready(function() {
+  elemento.hide();
+});
 
 function calcular() {
-  document.getElementById("resultadoOperacion").style.visibility = "visible";
+  var mostrar = $("#mostrar");
+  var elemento = $("#resultadoOperacion");
+  mostrar.click(function() {
+    elemento.show(1000);
+  });
   var p1 = document.formulario.parcial1.value;
   var p2 = document.formulario.parcial2.value;
   var p3 = document.formulario.parcial3.value;
@@ -19,6 +27,11 @@ function calcular() {
 }
 
 function limpiar() {
+  var elemento = $("#resultadoOperacion");
+  var ocultar = $("#ocultar");
+  ocultar.click(function() {
+    elemento.hide(1000);
+  });
   document.formulario.parcial1.value = "";
   document.formulario.parcial2.value = "";
   document.formulario.parcial3.value = "";
@@ -26,5 +39,4 @@ function limpiar() {
   document.getElementById("resultadoSuma").innerHTML = suma = "";
   document.getElementById("resultadoPromedio").innerHTML = promedio = "";
   document.getElementById("resultadoOperacion").style.background = "";
-  document.getElementById("resultadoOperacion").style.visibility = "hidden";
 }

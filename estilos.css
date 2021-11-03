@@ -50,7 +50,8 @@ span {
   margin: 5px;
 }
 
-#botones {
+#mostrar,
+#ocultar {
   box-shadow: 5px 5px 15px #000000;
   font-family: 'Courier New', Courier, monospace;
   color: #ffffff;
@@ -60,8 +61,9 @@ span {
   background-color: rgb(31, 50, 87);
 }
 
-#botones:hover {
-  -webkit-transform: scale(1.1);
+#mostrar:hover,
+#ocultar:hover {
+  /* -webkit-transform: scale(1.1); */
   transform: scale(1.1);
 }
 
